@@ -11,12 +11,12 @@ GPIO.setwarnings(False)
 GPIO.setup(LEDpins, GPIO.OUT)
 
 while True:
-    for pins in LEDpins:
+    for pins in LEDpins: # Makes each LED blink once
         GPIO.output(pins, GPIO.LOW)
         time.sleep(1)
         GPIO.output(pins, GPIO.HIGH)
         
-    for pins in LEDpins[::-1]:
+    for pins in LEDpins[::-1]: # Makes each LED blink once but in reverse order
         GPIO.output(pins, GPIO.LOW)
         time.sleep(1)
         GPIO.output(pins, GPIO.HIGH)
