@@ -11,7 +11,7 @@ GPIO.setwarnings(False)
 GPIO.setup(LEDRed, GPIO.OUT)
 GPIO.setup(LEDRed, GPIO.LOW)
 
-def blink():
+def blink(): # Makes LED blink once when program is ran
     while True:
         GPIO.output(LEDRed, GPIO.HIGH)
         time.sleep(1)
